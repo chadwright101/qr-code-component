@@ -2,7 +2,6 @@
   "name": "qr-code-component",
   "version": "1.0.0",
   "description": "![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
   "scripts": {
     "start": "parcel ./src/*.html --open --no-source-maps",
     "build": "parcel build ./src/index.html"
