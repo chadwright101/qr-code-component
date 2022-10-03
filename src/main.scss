@@ -1,0 +1,55 @@
+@use "./scss/abstracts/variables" as *;
+@use "./scss/base/fonts" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: $lightGrey;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  background-color: $white;
+  width: 20rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  border-radius: 1.25rem;
+  padding: 1rem 1rem 2.5rem 1rem;
+  box-shadow: 5px 5px 10px 5px hsla(220, 15%, 55%, 0.2);
+
+  &__img {
+    width: 100%;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 1.38rem;
+    text-align: center;
+    color: $DarkBlue;
+    padding: 0 0.5rem;
+    letter-spacing: 0.05;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 15px;
+    color: $grey;
+    text-align: center;
+    padding: 0 1rem;
+    letter-spacing: 0.25;
+  }
+}
